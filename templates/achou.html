@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+<script src="{{ url_for('static',filename='main.js') }}"></script>
+<div class="home-container">
+    <h1>BRUTUS</h1>
+    <h2>QUEBRADOR DE SENHAS</h2>
+  
+    <div class="container">
+      <h1 id="headline">VOCÊ NÃO CONSEGUIU</h1>
+      <h2 id="headline">O BRUTUS DESCOBRIU SUA SENHA EM MENOS DE 30 SEGUNDOS</h2>
+      <h2 id="headline">Sua senha: {{ password }}</h2>
+      <div id="content" class="emoji-2">
+        <span>😭</span>
+        <span>🥺</span>
+        <span>😥</span>
+      </div>
+      <button class="custom-btn btn-7" onclick="goIndex()"><span>TENTAR NOVAMENTE</span></button>
+    </div>
+</div>

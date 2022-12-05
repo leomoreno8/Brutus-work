@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+<script src="{{ url_for('static',filename='main.js') }}"></script>
+<div class="home-container">
+    <h1>BRUTUS</h1>
+    <h2>QUEBRADOR DE SENHAS</h2>
+    
+    <form method="POST" action="" class="form-password">
+        <label>Insira sua senha aqui</label>
+        <input class="custom-input" name="password" type="password" placeholder="Senha" maxlength="6">
+        <button class="custom-btn btn-7" type="submit" onclick="iniciarContagem()"><span>INICIAR</span></button>
+    </form>
+    <div class="requisitos">
+        <h4>A senha deve ter: </h4>
+        <p>🟢 no máximo 6 caracteres</p>
+        <p>🟢 apenas letras mínuscas e números</p>
+    </div>
+
+    <div class="container">
+        <h1 class="headline" id="headline">VOCÊ CONSEGUE SER MAIS RÁPIDO?</h1>
+        <div class="countdown" id="countdown">
+          <ul>
+            <li><span id="minutes">0</span>Minutes</li>
+            <li><span id="seconds">30</span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+</div>
